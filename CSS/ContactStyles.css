@@ -1,0 +1,280 @@
+body {
+  background-color: rgb(2, 2, 2);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /*hide scrollbar*/
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #2c2c2cd8; /* Set the color of the thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Style the scrollbar track when it's hovered */
+::-webkit-scrollbar-track:hover {
+  background: #000000; /* Change the color on hover */
+}
+
+/* Style the scrollbar thumb when it's hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; /* Change the thumb color on hover */
+}
+
+/*box styles*/
+.box {
+  position: relative;
+  margin-top: 20px;
+}
+
+/*additional common styles*/
+.box .container {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  fill: #595959;
+}
+/*additional common styles*/
+.box .input {
+  height: 50px;
+  width: calc(100% - 40px);
+  padding-left: 40px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: #001636;
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+
+.box .input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #ffffff73;
+}
+
+.content {
+  width: 330px;
+  padding: 48px 200px;
+  background: #000000;
+}
+
+.content .text {
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.button {
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 600;
+  background: #dde1e7;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #595959;
+  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+}
+
+.button:focus {
+  color: #3498db;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+
+.sub {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+.colors {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff; /* Add a 2px black border */
+  cursor: pointer;
+}
+
+.color-options {
+  display: flex;
+  justify-content: space-between;
+  width: 200px; /* adjust this as needed */
+}
+/* Hide the radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the labels when radio buttons are checked */
+input[type="radio"]:checked + label {
+  border: 4px solid #ffffff; /* Add a border to the checked color */
+}
+
+/* Specifying every color */
+#red-label {
+  background-color: rgb(214, 0, 0);
+}
+
+#black-label {
+  background-color: black;
+}
+
+#white-label {
+  background-color: white;
+}
+
+#blue-label {
+  background-color: rgb(0, 0, 138);
+}
+
+/* Style the container for payment options */
+.payment-options {
+  display: flex;
+  flex-direction: column; /* Place radio buttons in a column layout */
+  margin-bottom: 20px; /* Add some spacing between the radio buttons and the next element */
+}
+
+/* Style individual radio buttons and labels */
+.payment-options label {
+  text-align: center;
+  height: 35px;
+  width: 150px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
+  background: #001636;
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+  margin-bottom: 10px;
+}
+/* Style the radio buttons when checked */
+.payment-options input[type="radio"]:checked + label {
+  background: #003621;
+}
+
+/*the container for all the cars displayed styles*/
+.containercars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  position: absolute;
+  top: 70%;
+  right: 130px;
+  transform: translateY(-50%);
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.car {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.car img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px; /* space between image and buttons */
+}
+/*car name button styles*/
+.car-name {
+  text-align: center; /* Center car name */
+  margin-bottom: 10px; /* Add space between car name and buttons */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  width: 250px;
+  text-decoration: underline;
+  background-color: black;
+}
+/*FOR SALE button styles*/
+.add-to-cart {
+  height: 50px;
+  width: 150px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: bold;
+  background: #001636;
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+.add-to-cart:active {
+  background-color: #003621;
+}
+.car-name:hover {
+  color: #0162b3;
+}
+
+.nav {
+  list-style-type: none; /*remove default*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.459); /*bg color*/
+  top: 0;
+  position: fixed;
+  overflow: auto;
+}
+
+.list {
+  display: inline;
+  border-right: 1px solid rgb(0, 0, 0);
+}
+li:last-child {
+  border-right: none;
+}
+
+/*Footer styles*/
+.f {
+  background-color: #00060f;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+.f a {
+  color: white;
+  text-decoration: underline;
+  margin: 0 10px;
+}
