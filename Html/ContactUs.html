@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<head>
+  <!-- Meta tags for character set, compatibility, and viewport settings -->
+  <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="ContactStyles.css" />
+
+  <!-- Page Title -->
+  <title>BMW Contact Page</title>
+</head>
+<body>
+  <!-- Nav Bar -->
+  <div class="nav">
+    <ul>
+      <li class="list">
+        <a
+          style="
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+            font-size: 20px;
+            margin-right: 2%;
+          "
+          href="index.html"
+        >
+          Home Page
+        </a>
+      </li>
+      <li class="list">
+        <a
+          style="
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+            font-size: 20px;
+            margin-left: 2%;
+          "
+          href="Cars.html"
+        >
+          View Cars
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!--Form to contact BMW-->
+  <div class="content">
+    <br />
+    <div class="text">Fill this form to get started:</div>
+    <form>
+      <div class="box">
+        <span class="container"> </span>
+        <input
+          required=""
+          type="text"
+          class="input"
+          id="Fname"
+          placeholder="First Name"
+        />
+        <div class="box">
+          <span class="container"> </span>
+          <input
+            required=""
+            type="text"
+            class="input"
+            id="Lname"
+            placeholder="Last Name"
+          />
+          <div class="box">
+            <span class="container"> </span>
+            <input
+              required=""
+              type="tel"
+              class="input"
+              id="PhoneNum"
+              placeholder="Phone Number"
+            />
+            <div class="box">
+              <span class="container"> </span>
+              <input
+                required=""
+                type="text"
+                class="input"
+                id="Address"
+                placeholder="Your Address"
+              />
+              <div class="box">
+                <span class="container"> </span>
+                <input
+                  required=""
+                  type="text"
+                  class="input"
+                  id="emailInput"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="box">
+                <span class="container"> </span>
+                <input
+                  required=""
+                  type="password"
+                  class="input"
+                  id="passwordInput"
+                  placeholder="Password"
+                />
+                <div class="box">
+                  <p
+                    style="
+                      font-size: 25px;
+                      font-weight: 600;
+                      margin-bottom: 35px;
+                      color: #ffffff;
+                      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                        'Open Sans', 'Helvetica Neue', sans-serif;
+                    "
+                  >
+                    Please select your desired car color:
+                  </p>
+
+                  <div class="color-options">
+                    <input type="radio" id="red" name="color" value="red" />
+                    <label for="red" class="colors" id="red-label"></label>
+
+                    <input type="radio" id="black" name="color" value="black" />
+                    <label for="black" class="colors" id="black-label"></label>
+
+                    <input type="radio" id="white" name="color" value="white" />
+                    <label for="white" class="colors" id="white-label"></label>
+
+                    <input type="radio" id="blue" name="color" value="blue" />
+                    <label for="blue" class="colors" id="blue-label"></label>
+                  </div>
+
+                  <p
+                    style="
+                      font-size: 25px;
+                      font-weight: 600;
+                      margin-bottom: 35px;
+                      color: #ffffff;
+                      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                        'Open Sans', 'Helvetica Neue', sans-serif;
+                    "
+                  >
+                    Please select your desired payment method:
+                  </p>
+                  <div class="payment-options">
+                    <input
+                      type="radio"
+                      name="payment"
+                      required=""
+                      id="debit-card"
+                    />
+                    <label
+                      for="debit-card"
+                      style="
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-family: system-ui, -apple-system,
+                          BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                          Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                      "
+                      >Debit Card</label
+                    >
+
+                    <input type="radio" name="payment" required="" id="cash" />
+                    <label
+                      for="cash"
+                      style="
+                        color: white;
+                        font-size: 20px;
+                        font-family: system-ui, -apple-system,
+                          BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                          Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                      "
+                      >Cash</label
+                    >
+                  </div>
+                </div>
+                <label class="sub">
+                  <br />Subscribe to our newsletter and get 10% Off your first
+                  order!
+                </label>
+                <input type="checkbox" id="sub" />
+              </div>
+
+              <button class="button">Proceed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--BMW Cars Available For Sale Displayed-->
+  <div class="containercars">
+    <div class="car">
+      <img
+        src="https://www.bmw-me.com/content/dam/bmw/common/all-models/m-series/m8-coupe/2022/onepager/bmw-m8-coupe-onepager-sp-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1642518221018.jpg"
+        alt="BMW Car 1"
+      />
+      <button
+        class="car-name"
+        onclick="location.href='https://www.bmw-me.com/en/all-models/m-series/m8-coupe/2022/bmw-8-series-coupe-m-automobiles-overview.html'"
+      >
+        M8 Competition Coupé
+      </button>
+      <div class="car-buttons">
+        <button class="add-to-cart">FOR SALE</button>
+      </div>
+    </div>
+    <div class="car">
+      <img
+        src="https://www.bmw-me.com/content/dam/bmw/common/all-models/m-series/m4-coupe/2022/Highlights/bmw-4-series-coupe-m-automobiles-sp-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1677150187416.jpg"
+        alt="BMW Car 2"
+      />
+      <button
+        class="car-name"
+        onclick="location.href='https://www.bmw-me.com/en/all-models/m-series/m4-coupe/2022/bmw-4-series-coupe-m-automobiles-overview.html'"
+      >
+        BMW M4 Competition Coupé
+      </button>
+      <div class="car-buttons">
+        <button class="add-to-cart">FOR SALE</button>
+      </div>
+    </div>
+    <div class="car">
+      <img
+        src="https://www.bmw-me.com/content/dam/bmw/common/all-models/m-series/m3-sedan/2023/highlights/bmw-3-series-cs-m-automobiles-sp-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1669651502064.jpg"
+        alt="BMW Car 3"
+      />
+      <button
+        class="car-name"
+        onclick="location.href='https://www.bmw-me.com/en/all-models/m-series/m3-sedan/2023/bmw-3-series-sedan-m-automobiles-overview.html'"
+      >
+        BMW M3 COMPETITION
+      </button>
+      <div class="car-buttons">
+        <button class="add-to-cart">FOR SALE</button>
+      </div>
+    </div>
+    <div class="car">
+      <img
+        src="https://www.bmw-me.com/content/dam/bmw/common/all-models/m-series/m5-sedan/2020/Technical-Data/bmw-5-series-sedan-m-technical-data-sp-xxl.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1587042817750.jpg"
+        alt="BMW Car 4"
+      />
+      <button
+        class="car-name"
+        onclick="location.href='https://www.bmw-me.com/en/all-models/m-series/m5-sedan/2021/bmw-5-series-sedan-m-automobiles-overview.html'"
+      >
+        BMW M5 Competition
+      </button>
+      <div class="car-buttons">
+        <button class="add-to-cart">FOR SALE</button>
+      </div>
+    </div>
+    <div class="car">
+      <img
+        src="https://www.bmw-me.com/content/dam/bmw/common/all-models/x-series/x4/2021/onepager/bmw-x4-onepager-stage-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1620808454234.jpg"
+        alt="BMW Car 5"
+      />
+      <button
+        class="car-name"
+        onclick="location.href='https://www.bmw-me.com/en/all-models/x-series/X4/2021/bmw-X4-highlights.html'"
+      >
+        BMW X4
+      </button>
+      <div class="car-buttons">
+        <button class="add-to-cart">FOR SALE</button>
+      </div>
+    </div>
+    <div class="car">
+      <img
+        src="https://www.bmw-me.com/content/dam/bmw/common/all-models/m-series/bmw-z4-m40i/2022/Highlights/bmw-z-series-z4-m40i-roadster-sp-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1661762345541.jpg"
+        alt="BMW Car 6"
+      />
+      <button
+        class="car-name"
+        onclick="location.href='https://www.bmw-me.com/en/all-models/m-series/bmw-z4-m40i/2022/bmw-z4-overview.html'"
+      >
+        BMW Z4 M40i ROADSTER.
+      </button>
+      <div class="car-buttons">
+        <button class="add-to-cart">FOR SALE</button>
+      </div>
+    </div>
+    <div class="car">
+      <img
+        src="https://www.bmw-me.com/content/dam/bmw/common/all-models/i-series/i7/2022/Highlights/bmw-7-series-i7-sp-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1687168645624.jpg"
+        alt="BMW Car 7"
+      />
+      <button
+        class="car-name"
+        onclick="location.href='https://www.bmw-me.com/en/all-models/bmw-i/i7/2022/bmw-i7-sedan-highlights.html'"
+      >
+        BMW i7
+      </button>
+      <div class="car-buttons">
+        <button class="add-to-cart">FOR SALE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="f">
+    <p>Visit us on:</p>
+    <a class="visit" href="https://www.bmw.com/en/index.html"
+      >- Our Official Website -
+    </a>
+    <a class="visit" href="https://www.linkedin.com/company/bmw-group/"
+      >- Our LinkedIn Page -
+    </a>
+    <a class="visit" href="https://www.facebook.com/BMW"
+      >- Our Facebook Page -
+    </a>
+    <p>&copy; 2023 MelanyJabanian. All rights reserved.</p>
+  </div>
+</body>
